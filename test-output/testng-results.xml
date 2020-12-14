@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-12-14T19:05:08Z" name="Demo_TEST" finished-at="2020-12-14T19:05:13Z" duration-ms="5363">
+    <groups>
+    </groups>
+    <test started-at="2020-12-14T19:05:08Z" name="Demo_TEST" finished-at="2020-12-14T19:05:13Z" duration-ms="5363">
+      <class name="com.inetbanking.testCases.TC_loginDDT_001">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_loginDDT_001@55b0dcab]" started-at="2020-12-14T19:05:08Z" name="setup" finished-at="2020-12-14T19:05:12Z" duration-ms="3960" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_loginDDT_001@55b0dcab]" started-at="2020-12-14T19:05:13Z" name="loginDDT" data-provider="LoginData" finished-at="2020-12-14T19:05:13Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.ExceptionInInitializerError]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.ExceptionInInitializerError
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ExceptionInInitializerError
+at org.apache.poi.ss.util.CellReference.<init>(CellReference.java:109)
+at org.apache.poi.xssf.usermodel.XSSFCell.<init>(XSSFCell.java:115)
+at org.apache.poi.xssf.usermodel.XSSFRow.<init>(XSSFRow.java:75)
+at org.apache.poi.xssf.usermodel.XSSFSheet.initRows(XSSFSheet.java:268)
+at org.apache.poi.xssf.usermodel.XSSFSheet.read(XSSFSheet.java:231)
+at org.apache.poi.xssf.usermodel.XSSFSheet.onDocumentRead(XSSFSheet.java:218)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.parseSheet(XSSFWorkbook.java:443)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.onDocumentRead(XSSFWorkbook.java:408)
+at org.apache.poi.POIXMLDocument.load(POIXMLDocument.java:169)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:300)
+at com.inetbanking.utilities.XLUtils.getRowCount(XLUtils.java:27)
+at com.inetbanking.testCases.TC_loginDDT_001.getData(TC_loginDDT_001.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 22 more
+Caused by: java.nio.charset.UnsupportedCharsetException: Big5
+at java.base/java.nio.charset.Charset.forName(Unknown Source)
+at org.apache.poi.util.StringUtil.<clinit>(StringUtil.java:37)
+... 41 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_loginDDT_001@55b0dcab]" started-at="2020-12-14T19:05:13Z" name="tearDown" finished-at="2020-12-14T19:05:13Z" duration-ms="758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.inetbanking.testCases.TC_loginDDT_001 -->
+    </test> <!-- Demo_TEST -->
+  </suite> <!-- Demo_TEST -->
+</testng-results>
